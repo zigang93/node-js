@@ -22,3 +22,9 @@ greetMe();
 
 // it's still first class
 logGreeting(greetMe);
+
+
+// use a function expression on the fly
+logGreeting(function()){
+    console.log('hello Zi Gang !');
+});
