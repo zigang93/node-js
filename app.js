@@ -1,6 +1,24 @@
+//function statement
+function greet() {
+    console.log('hi');
+}
+greet();
 
-var a = 1;
-var b = 2;
-var c = a + b;
+//fucntion are first class 
+function logGreeting(fn){
+    fn();
+}
 
-console.log(c);
+//can pass string , obeject , number and function
+logGreeting(greet); //return hi
+
+
+//function expression
+var greetMe = function(){
+    console.log('Hi Zi Gang');
+}
+
+greetMe();
+
+// it's still first class
+logGreeting(greetMe);
